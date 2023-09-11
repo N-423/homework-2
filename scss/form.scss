@@ -1,0 +1,55 @@
+.form {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .text-input {
+        width: 300px;
+        height: 30px;
+        font-size: 20px;
+        font-family: BentonSans;
+        padding: 5px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .zip-input {
+        
+    }
+
+    label {
+        font-family: BentonSans;
+        font-size: 15px;
+        margin-left: 5px;
+    }
+
+    input {
+        margin-bottom: 10px;
+    }
+
+    .metric-radio {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 10px;
+
+        div {
+            display: flex;
+            align-items: center;
+
+            input {
+                margin: auto 0;
+            }
+        }
+    }
+
+    #submit {
+        width: 100px;
+        height: 30px;
+        font-size: 15px;
+        font-family: BentonSans;
+        border: none;
+        border-radius: 5px;
+    }
+}

@@ -1,0 +1,305 @@
+@font-face {
+  font-family: BentonSans;
+  src: url(./fonts/BentonSans-Regular_T.ttf);
+}
+@font-face {
+  font-family: BentonSansBold;
+  src: url(./fonts/BentonSans-Bold_T.ttf);
+}
+@font-face {
+  font-family: BentonSansLight;
+  src: url(./fonts/BentonSans-Light_T.ttf);
+}
+@font-face {
+  font-family: BentonSansMedium;
+  src: url(./fonts/BentonSans-Medium_T.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background-color: #81a6f0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: sans-serif;
+  color: #fff;
+}
+
+p {
+  font-family: BentonSans;
+}
+
+h2, h1 {
+  margin-bottom: 10px;
+  font-family: BentonSansMedium;
+}
+
+nav {
+  display: flex;
+  height: 50px;
+  background-color: #5386ed;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+nav div {
+  width: 400px;
+}
+nav div.nav-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+nav div.signup {
+  display: flex;
+  gap: 20px;
+  justify-content: end;
+}
+nav a {
+  font-size: 20px;
+  font-family: BentonSans;
+  text-decoration: none;
+  color: #fff;
+}
+nav i {
+  font-size: 20px;
+  font-family: BentonSans;
+  text-decoration: none;
+  color: #fff;
+}
+
+.form {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form .text-input {
+  width: 300px;
+  height: 30px;
+  font-size: 20px;
+  font-family: BentonSans;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+.form label {
+  font-family: BentonSans;
+  font-size: 15px;
+  margin-left: 5px;
+}
+.form input {
+  margin-bottom: 10px;
+}
+.form .metric-radio {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.form .metric-radio div {
+  display: flex;
+  align-items: center;
+}
+.form .metric-radio div input {
+  margin: auto 0;
+}
+.form #submit {
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+  font-family: BentonSans;
+  border: none;
+  border-radius: 5px;
+}
+
+.main {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 50px;
+}
+.main .main-title {
+  text-align: center;
+  margin-top: 50px;
+}
+.main .description {
+  width: 400px;
+  font-size: 20px;
+  text-align: center;
+  margin: 0 auto;
+}
+.main .section-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+  display: none;
+}
+.main .section-container .section-one, .main .section-container .section-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main input {
+  display: block;
+}
+.main p.location-text {
+  font-size: 40px;
+  font-family: sans-serif;
+}
+.main .icon-container {
+  width: 250px;
+  height: 250px;
+  background-color: #5386ed;
+  border-radius: 10%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.main .icon-container .main-temp {
+  font-size: 80px;
+  margin: auto;
+  padding-left: 20px;
+  font-family: BentonSans;
+  color: #fff;
+}
+.main .icon-container .main-text {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  height: 50px;
+  bottom: 0;
+}
+.main .icon-container .main-text p {
+  font-size: 20px;
+  font-family: sans-serif;
+  margin: auto 0;
+  color: #fff;
+}
+.main .high-low {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-bottom: 20px;
+}
+.main .high-low p {
+  font-size: 20px;
+  color: #fff;
+}
+.main .forecast-grid {
+  max-width: 600px;
+  display: flex;
+  gap: 10px;
+  overflow: auto;
+  white-space: nowrap;
+  margin-bottom: 20px;
+}
+.main .forecast-grid .forecast-element {
+  width: 60px;
+  background-color: #5386ed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px 0;
+}
+.main .forecast-grid .forecast-element p {
+  color: #fff;
+}
+.main .day-forecast {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  background-color: #5386ed;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.main .day-forecast .day-forecast-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+.main .day-forecast .day-forecast-row p {
+  font-size: 20px;
+  color: #fff;
+}
+.main .day-forecast .day-forecast-row .day-forecast-date {
+  width: 125px;
+}
+.main .day-forecast .day-forecast-row .day-forecast-highlow {
+  width: 175px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.main .double-container {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.main .double-container div {
+  width: 275px;
+  display: flex;
+  flex-direction: column;
+}
+.main .double-container div h2 {
+  text-align: center;
+}
+.main .double-container div div {
+  background-color: #5386ed;
+  border-radius: 10px;
+  padding: 20px;
+  gap: 8px;
+}
+.main .double-container div div p {
+  font-size: 20px;
+  color: #fff;
+}
+.main .misc-container {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  background-color: #5386ed;
+  border-radius: 10px;
+  padding: 20px;
+  gap: 8px;
+}
+.main .misc-container p {
+  font-size: 20px;
+  color: #fff;
+}
+.main .icon-and-text {
+  display: flex;
+}
+.main .icon-and-text i {
+  color: #fff;
+  width: 25px;
+  margin-right: 15px;
+  font-size: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1270px) {
+  .main .section-container {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
